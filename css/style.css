@@ -1,316 +1,3 @@
-/*btn*/
-.nc-icon {
-	display: inline-block;
-	font: normal normal normal 14px/1 'nucleo-icons';
-	font-size: inherit;
-	speak: none;
-	text-transform: none;
-	/* Better Font Rendering */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  }
-  
-  /*------------------------
-	change icon size
-  -------------------------*/
-  .nc-icon.lg {
-	font-size: 1.33333333em;
-	vertical-align: -16%;
-  }
-  
-  .nc-icon.x2 {
-	font-size: 2em;
-  }
-  
-  .nc-icon.x3 {
-	font-size: 3em;
-  }
-  
-  /*----------------------------------
-	add a square/circle background
-  -----------------------------------*/
-  .nc-icon.square,
-  .nc-icon.circle {
-	padding: 0.33333333em;
-	vertical-align: -16%;
-	background-color: #eee;
-  }
-  
-  .nc-icon.circle {
-	border-radius: 50%;
-  }
-  
-  /*------------------------
-	list icons
-  -------------------------*/
-  .nc-icon-ul {
-	padding-left: 0;
-	margin-left: 2.14285714em;
-	list-style-type: none;
-  }
-  
-  .nc-icon-ul>li {
-	position: relative;
-  }
-  
-  .nc-icon-ul>li>.nc-icon {
-	position: absolute;
-	left: -1.57142857em;
-	top: 0.14285714em;
-	text-align: center;
-  }
-  
-  .nc-icon-ul>li>.nc-icon.lg {
-	top: 0;
-	left: -1.35714286em;
-  }
-  
-  .nc-icon-ul>li>.nc-icon.circle,
-  .nc-icon-ul>li>.nc-icon.square {
-	top: -0.19047619em;
-	left: -1.9047619em;
-  }
-  
-  /*------------------------
-	spinning icons
-  -------------------------*/
-  .nc-icon.spin {
-	-webkit-animation: nc-icon-spin 2s infinite linear;
-	-moz-animation: nc-icon-spin 2s infinite linear;
-	animation: nc-icon-spin 2s infinite linear;
-  }
-  
-  @-webkit-keyframes nc-icon-spin {
-	0% {
-	  -webkit-transform: rotate(0deg);
-	}
-  
-	100% {
-	  -webkit-transform: rotate(360deg);
-	}
-  }
-  
-  @-moz-keyframes nc-icon-spin {
-	0% {
-	  -moz-transform: rotate(0deg);
-	}
-  
-	100% {
-	  -moz-transform: rotate(360deg);
-	}
-  }
-  
-  @keyframes nc-icon-spin {
-	0% {
-	  -webkit-transform: rotate(0deg);
-	  -moz-transform: rotate(0deg);
-	  -ms-transform: rotate(0deg);
-	  -o-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	}
-  
-	100% {
-	  -webkit-transform: rotate(360deg);
-	  -moz-transform: rotate(360deg);
-	  -ms-transform: rotate(360deg);
-	  -o-transform: rotate(360deg);
-	  transform: rotate(360deg);
-	}
-  }
-  
-  /*------------------------
-	rotated/flipped icons
-  -------------------------*/
-  .nc-icon.rotate-90 {
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	transform: rotate(90deg);
-  }
-  
-  .nc-icon.rotate-180 {
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	transform: rotate(180deg);
-  }
-  
-  .nc-icon.rotate-270 {
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-	-webkit-transform: rotate(270deg);
-	-moz-transform: rotate(270deg);
-	-ms-transform: rotate(270deg);
-	-o-transform: rotate(270deg);
-	transform: rotate(270deg);
-  }
-  
-  .nc-icon.flip-y {
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-	-webkit-transform: scale(-1, 1);
-	-moz-transform: scale(-1, 1);
-	-ms-transform: scale(-1, 1);
-	-o-transform: scale(-1, 1);
-	transform: scale(-1, 1);
-  }
-  
-  .nc-icon.flip-x {
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-	-webkit-transform: scale(1, -1);
-	-moz-transform: scale(1, -1);
-	-ms-transform: scale(1, -1);
-	-o-transform: scale(1, -1);
-	transform: scale(1, -1);
-  }
-  
-/*btn*/
-/*table*/
-.table thead tr>th,
-.table thead tr>td,
-.table tbody tr>th,
-.table tbody tr>td,
-.table tfoot tr>th,
-.table tfoot tr>td {
-  border-top: 1px solid #ccc;
-}
-
-.table>thead>tr>th {
-  border-bottom-width: 0;
-  font-size: 1.35em;
-  font-weight: 300;
-}
-
-.table .radio,
-.table .form-check {
-  margin-top: -23px;
-  width: 15px;
-}
-
-.table>thead>tr>th,
-.table>tbody>tr>th,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>tbody>tr>td,
-.table>tfoot>tr>td {
-  padding: 12px 8px;
-  vertical-align: middle;
-}
-
-.table .th-description {
-  max-width: 150px;
-}
-
-.table .td-price {
-  font-size: 26px;
-  font-weight: 300;
-  margin-top: 5px;
-  text-align: right;
-}
-
-.table .td-total {
-  font-weight: 600;
-  font-size: 1.35em;
-  padding-top: 20px;
-  text-align: right;
-}
-
-.table .td-actions .btn.btn-sm {
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-.table>tbody>tr {
-  position: relative;
-}
-
-.table-striped tbody>tr:nth-of-type(2n+1) {
-  background-color: #fff;
-}
-
-.table-striped>thead>tr>th,
-.table-striped>tbody>tr>th,
-.table-striped>tfoot>tr>th,
-.table-striped>thead>tr>td,
-.table-striped>tbody>tr>td,
-.table-striped>tfoot>tr>td {
-  padding: 15px 8px;
-}
-
-.table-shopping>thead>tr>th {
-  color: #a49e93;
-  font-size: 1.1em;
-  font-weight: 300;
-}
-
-.table-shopping>tbody>tr>td {
-  font-size: 15px;
-  padding: 30px 5px;
-}
-
-.table-shopping>tbody>tr>td b {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.table-shopping .td-number,
-.table-shopping .td-price,
-.table-shopping .td-total {
-  font-size: 1.2em;
-  font-weight: 300;
-  min-width: 130px;
-  text-align: right;
-}
-
-.table-shopping .td-number small,
-.table-shopping .td-price small,
-.table-shopping .td-total small {
-  margin-right: 3px;
-}
-
-.table-shopping .td-product {
-  min-width: 170px;
-  padding-left: 30px;
-}
-
-.table-shopping .td-product strong {
-  color: #403D39;
-  font-size: 1.2em;
-  font-weight: 600;
-}
-
-.table-shopping .td-number,
-.table-shopping .td-total {
-  color: #403D39;
-  font-weight: 600;
-}
-
-.table-shopping .td-quantity {
-  min-width: 200px;
-}
-
-.table-shopping .td-quantity .btn-group {
-  margin-left: 10px;
-}
-
-.table-shopping .img-container {
-  border-radius: 6px;
-  display: block;
-  height: 100px;
-  overflow: hidden;
-  width: 100px;
-}
-
-.table-shopping .img-container img {
-  width: 100%;
-}
-
-.table-shopping .tr-actions>td {
-  border-top: 0;
-}
-/*table*/
 .clear{clear: both;}
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
@@ -662,7 +349,7 @@ ul.icon1 {
 }
 li.list_img{
 	float:left;
-	width:auto;
+	width:26%;
 }
 .login_buttons{
 	margin-top:23%;
@@ -691,7 +378,7 @@ li.list_desc h4 a:hover{
 	margin-top: 3px;
 }
 .sub-icon1 ul li h3{
-	text-align: left;
+	text-align: center;
 	font-size: 18px;
 	color: #555;
 	text-transform: uppercase;
@@ -700,13 +387,12 @@ li.list_desc h4 a:hover{
 .sub-icon1 ul li p{
 	text-align:center;
 	font-size: 0.8125em;
-	color: rgb(58, 37, 37);
+	color: #555;
 	line-height: 1.5em;
 	margin:2% 0;
 }
 .sub-icon1.list{
-	padding:100px;
-	width: 1000px;
+	padding:20px;
 }
 .sub-icon1 ul li p a{
 	color: #00405d;
@@ -872,7 +558,7 @@ li.list_desc h4 a:hover{
 }
 .content-bottom{
 	width:100%;
-	background: url(../images/bg_image1.png)no-repeat center top;
+	background: url(../images/bg_image1.jpg)no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -981,7 +667,7 @@ i.close1{
    -moz-box-shadow: 0 0 1px #000;
    box-shadow: 0 0 1px #000;
 }
-.view a.info:hover {
+.view a.info: hover {
    -webkit-box-shadow: 0 0 5px #000;
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
@@ -1381,7 +1067,6 @@ li.youtube a span {
 .shop_desc{
 	border:1px solid #E0E0E0;
 	padding:5%;
-	text-align: center;
 }
 .shop_desc h3{
 	margin-bottom:5px;
@@ -2359,9 +2044,9 @@ h4.m_11 {
 	 width:50px !important;
 	 height:50px !important;
   }
-  .register-top-grid{
+  .register-top-grid(
   	margin-bottom:20px;
-  }
+  )
   .nav {
 	top: 66px;
 	right: 8px;
